@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation Timer</title>
+    <link rel="stylesheet" href="./timer.css">
+</head>
+<body>
+    <div class="main--div">
+    <!-- Complete Main Div -->
+    <div class="main-container center">
+        <!-- Circular Divs -->
+        <div class="circle-container center">
+            <!-- Child -->
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outermost--circle"></div>
+        </div>
+
+        <div class="timer-container center">
+            <div class="timer center"></div>
+        </div>
+
+    </div>
+    <div class="inputs">
+        <!-- <button type="button" class="btn1">5min</button>
+        <button type="button" class="btn2">10min</button>
+        <button type="button" class="btn3">20min</button>
+        <button type="button" class="btn4">30min</button> -->
+        <label>Hours : </label>
+        <input type="text" oninput="validateNumber(this)" class="hrs" required>
+        <label>Minutes : </label>
+        <input type="text" oninput="validateNumber(this)" class="mins" required>
+        <label>Seconds : </label>
+        <input type="text" oninput="validateNumber(this)" class="secs" required>
+    </div>
+    <div class="buttons">
+        <button type="button" id="start">Start</button>
+        <button type="button" id="reset">Reset</button>
+    </div>
+</div>
+    <script src="./timer.js"></script>
+    <script>
+        function validateNumber(input) {
+            // Remove any non-numeric characters
+            input.value = input.value.replace(/[^0-9]/g, '');
+
+            // Display error message if input is not a number
+            // var errorText = document.getElementById('errorText');
+            if (isNaN(input.value)) {
+                // errorText.textContent = 'Please enter only numbers.';
+            } else {
+                // errorText.textContent = '';
+            }
+        }
+    </script>
+</body>
+</html>

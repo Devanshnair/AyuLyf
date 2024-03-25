@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -75,4 +76,83 @@
     </section>
     <script src="form.js" type="module"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="form.css">
+    <title>Consultancy form</title>
+</head>
+<body>
+    <section id="consultancy">
+
+        <div class="overlay">
+
+        <h1><em>Expert</em> Guidance<br>for <em>Health</em> Concerns.</h1>
+
+        <form action="/submit-appointment" method="post">
+            
+            <p>Book an Appointment</p>
+
+            <!-- Contact info -->
+            <div class="contact-info">
+                <h2>Contact Information:</h2>
+
+                <label for="fullName">Name:</label><br>
+                <input type="text" id="fullName" name="fullName" placeholder="Enter name" required autocomplete="off"><br>
+    
+                <label for="email">E-mail Address:</label><br>
+                <input type="email" id="email" name="email" placeholder="Enter E-mail" required autocomplete="off"><br>
+    
+                <label for="phone">Phone Number:</label><br>
+                <input type="tel" id="phone" name="phone" placeholder="Enter phone number" required autocomplete="off" maxlength="10"><br>
+            </div>
+            
+
+            <div class="appoint-info">
+                <!-- Appointment details -->
+                <h2>Appointment Details:</h2>
+    
+                <label for="preferredDate">Preferred Date:</label><br>
+                <input type="date" id="preferredDate" name="preferredDate" required><br>
+    
+                <label for="preferredTime">Preferred Time:</label><br>
+                <select id="preferredTime" name="preferredTime" required>
+                    <option value="morning">Morning(9:00 - 12:00)</option>
+                    <option value="afternoon">Afternoon(14:00 - 16:30)</option>
+                    <option value="evening">Evening(19:00 - 21:00)</option>
+                </select>
+            </div>
+            
+            <div class="add-info">
+                <!-- Additional information -->
+                <h2>Additional Information:</h2>
+    
+                <label for="reason">Reason for Appointment:</label>
+                <textarea id="reason" name="reason" rows="2" cols="22" required="" placeholder="Enter reason"></textarea><br>
+    
+                <label for="medicalHistory">Previous Medical History:</label>
+                <textarea id="medicalHistory" name="medicalHistory" rows="2" cols="22" placeholder="Enter history"></textarea>
+            </div>
+            
+            <div class="consent">
+                <!-- Consent -->
+                <h2>Consent:</h2><br>
+                
+                <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+                <label>
+                    I agree to the Privacy Policy and Terms of Service
+                </label>
+            </div>
+            
+            <input type="button" id="form-submit" value="Submit Request">
+        </form>
+
+        </div>
+    </section>
+    <script src="form.js" type="module"></script>
+</body>
+>>>>>>> ed6f4688b1b8b1b17be9590cf6d4b3c617c05b27
 </html>

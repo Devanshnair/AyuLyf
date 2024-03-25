@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.overlay {
+    width: 98%;
+    display: flex;
+    height: fit-content;
+    background: linear-gradient(#00000080, #00000059, #00000080);
+}
+.consent label{
+    display: flex;
+    align-items: center;
+}
+#consultancy h1 {
+    grid-column-start: 1;
+    margin: auto 9vw;
+    width: 43vw;
+    font-size: 3.8vw;
+    text-shadow: 0px 0px 30px #216869;
+    transition: transform 0.5s ease-in-out;
+    color: beige;
+}
+
+#consultancy h1:hover {
+    transform: scale(1.03);
+}
+
+#consultancy {
+    /*text-align: center;*/
+    display: grid;
+    grid-template-columns: 2fr;
+    /*height: 100vh;*/
+    background-image: url("/Images/consultBgImg.jpg");
+    background-size: cover;
+}
+
+#consultancy form p {
+    font-size: 2vw;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 17px;
+    color: beige;
+}
+
+#consultancy form {
+    grid-column-start: 2;
+    margin: 0.5vw 12vw 0.5vw 5vw;
+    padding: 1.8vw 4vw;
+    border-radius: 24px;
+    background-color: #000000c9;
+    transform: scale(0.92);
+    transition: transform 0.7s ease-in-out;
+}
+
+/* #consultancy form:hover {
+    transform: scale(0.94);
+} */
+
+#consultancy div div {
+    margin-bottom: 15px;
+    line-height: 1.55;
+}
+
+#consultancy h2 {
+    font-size: 1.6vw;
+    color: #f2f2f2;
+}
+
+#consultancy div div label {
+    font-size: 1vw;
+    color: #f2f2f2;
+}
+
+#consultancy div div input, #consultancy div div select {
+    /* font-size: 0.8vw; */
+    /* padding: 5px; */
+    background: transparent;
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    color: #f2f2f2;
+}
+select{
+    padding: 8px 10px;
+    color: black;
+    font-size: 1.1rem;
+}
+select option{
+    color: black;
+}
+input{
+    width: 100%;
+    padding:8px 10px;
+    font-size: 1.1rem;
+    text-indent: 10px;
+    outline: none;
+}
+
+#consultancy div div textarea {
+    vertical-align: top;
+    margin-bottom: 15px;
+    text-indent: 10px;
+    padding-top: 10px;
+    resize: none;
+    background: transparent;
+    border: 2px solid #f2f2f2;
+    border-radius: 8px;
+    /* font-size: 0.95vw; */
+}
+textarea{
+    color:whitesmoke ;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+.consent {
+    display: grid;
+    grid-template-rows: 2fr;
+    grid-template-columns: 2fr;
+}
+
+.consent input {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin: 22px 0px;
+}
+
+.consent label {
+    grid-row-start: 2;
+    grid-column-start: 2;
+}
+
+#form-submit {
+    padding: 15px 25px;
+    background: linear-gradient(280deg, #216869, #49ff00ad);
+    font-weight: 500;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    color: white;
+    border: none;
+    cursor:pointer
+}
+
+#form-submit:active{
+    background: linear-gradient(280deg, #1b5051, #41c50dad);
+    transition: 0.2s ease;
+    transform: scale(0.98);
+}
+::-webkit-scrollbar {
+    width: 10px; /* Set the width of the scrollbar */
+    background-color: #101010; /* Background color of the scrollbar track */
+  }
+  
+  /* Scrollbar Thumb (Scroller) */
+  ::-webkit-scrollbar-thumb {
+    background-color: #989494; /* Color of the scrollbar thumb (scroller) */
+    border-radius: 5px; /* Optional: Set border radius for a rounded thumb */
+  }
+  
+  /* Optional: Hover styles for the scrollbar thumb */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #12a358; /* Change color on hover */
+  }
