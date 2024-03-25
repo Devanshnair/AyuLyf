@@ -1,0 +1,98 @@
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+nav{
+    width: 90%;
+    height: 13vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: sticky;
+    margin-left: 2%;
+}
+
+nav p {
+    font-size: 1.8vw;
+    font-weight: 800;
+    color: #216869;
+}
+
+.logo--image{
+    width: 13vw;
+    cursor: pointer;
+    margin-left: 6rem;
+    padding: 1vw;
+}
+
+#blog-container {
+    background: #f2f2f2;
+}
+
+#blog {
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: 2fr;
+    padding-top: 3vh;
+}
+
+#userImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 100px;
+    width: 58px;
+    margin-left: 25px;
+    border: 2px solid #216869;
+}
+
+#userId {
+    grid-column-start: 2;
+    font-size: 1vw;
+    width: 80%;
+    margin-left: 1vw;
+}
+
+#userId i {
+    color: gold;
+}
+
+#blog-content {
+    grid-row-start: 2;
+    grid-column-start: 2;
+    background: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 2px solid black;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: 5vw;
+    margin-right: 9vw;
+    font-size: 1.2vw;
+    border: 2px solid #49a078;
+}
+
+.back{
+    color: #216869;
+    text-decoration: none;
+    font-size: 1.4rem;
+    background-color:white ;
+    border-radius: 8px;
+    padding: 10px 20px;
+    bottom: 5vh;
+    border: 2px solid #216869;
+
+}
+.back:hover{
+    background-color: #216869;
+    color: white;
+    transition: 0.3s ease;
+}
+.back:active{
+    transform: scale(0.97);
+    background-color: #216869;
+    transition: 0.2s ease;
+}

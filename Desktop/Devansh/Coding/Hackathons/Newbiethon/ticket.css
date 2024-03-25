@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat", sans-serif;
+    background-color: beige;
+}
+.ticket{
+    border-radius: 20px;
+    width: 70%;
+    height: auto;
+}
+.image{
+    width: 100%;
+    /* background-color: beige; */
+    flex-direction: column;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title{
+    font-size: 4rem;
+    color: #1f2421;
+    padding-bottom: 2rem;
+}
+.name--email{
+    transform: rotate(-90deg);
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    position: absolute;
+    font-size: 1.4rem;
+    top: 380px;
+    left: 390px;
+}
+.info{
+    display: flex;
+    font-size: 1.4rem;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 2rem;
+    height: 50px;
+    position: absolute;
+    top: 375px;
+    left: 700px;
+}
+.back{
+    color: white;
+    text-decoration: none;
+    margin-left: 20vw;
+    font-size: 1.4rem;
+    background-color: #216869;
+    border-radius: 8px;
+    padding: 10px 20px;
+    position: absolute;
+    bottom: 5vh;
+}
+.back:hover{
+    background-color: #216869;
+    transition: 0.3s ease;
+}
+.back:active{
+    transform: scale(0.97);
+    background-color: #49a078;
+    transition: 0.2s ease;
+}
